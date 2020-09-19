@@ -10,10 +10,11 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+for (var i= 0; i < passwordText; i++) {
+  
+}
 
-var value = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ "
+var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ "
 
 var userPasswordLength = 0
 while (userPasswordLength < 8 || userPasswordLength > 128) {
@@ -37,3 +38,6 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
       alert ("You must choose at least one prompt to generate a password.")
       }
 }
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
