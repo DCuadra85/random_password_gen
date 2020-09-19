@@ -12,7 +12,10 @@ function writePassword() {
 
 // var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ "
 
-
+var userLowercase = confirm ("Will this password have lower case?");
+var userCaps = confirm ("Will this password have capitals?");
+var userNumbers = confirm ("Will this password have numbers?");
+var userSymbols = confirm("Will this password have special characters?");
 
 var userPasswordLength = 0
 while (userPasswordLength < 8 || userPasswordLength > 128) {
@@ -29,46 +32,62 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
 
           continue;
       }
+}
 
-  var userLowercase = confirm ("Does the password have lower case?");
-  var userCaps = confirm ("Does the password have capitals?");
-  var userNumbers = confirm ("Does the password have numbers?");
-  var userSymbols = confirm("Does the password have special characters?");
-
-      // if (userCaps == true && userLowercase == true && userNumbers == true && userSymbols == true){
-      //   var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
-      // }
-    
-      // else (userCaps == true && userLowercase == true && userNumbers == true && userSymbols == false){
-      //   valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-      // }
-
-      // else (userCaps == true && userLowercase == true && userNumbers == false && userSymbols == false){
-      //   valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-      // }
-
-      // else (userCaps == true && userLowercase == false && userNumbers == false && userSymbols == false){
-      //   valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      // }
-
-      // else (userCaps == true && userLowercase == false && userNumbers == true && userSymbols == false){
-      //   valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-      // }
-
-      // else (userCaps == true && userLowercase == false && userNumbers == false && userSymbols == true){
-      //   valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
-      // }
-
-
-      
-      else (userCaps == false && userLowercase == false && userNumbers == false && userSymbols == false) {
+      //need to ask if there is an easier way of doing this
+      //tttt
+      if ((userCaps === true) && (userLowercase === true) && (userNumbers === true) && (userSymbols === true)){
+        var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
+      }
+      //tttf
+      else if((userCaps === true) && (userLowercase === true) && (userNumbers === true) && (userSymbols === false)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+      }
+      //ttff
+      else if((userCaps === true) && (userLowercase === true) && (userNumbers === false) && (userSymbols === false)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      }
+      //tfff
+      else if((userCaps === true) && (userLowercase === false) && (userNumbers === false) && (userSymbols === false)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      }
+      //tfft
+      else if((userCaps === true) && (userLowercase === false) && (userNumbers === false) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+      }
+      //tftf
+      else if((userCaps === true) && (userLowercase === false) && (userNumbers === true) && (userSymbols === false)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
+      }
+      //tftt
+      else if((userCaps === true) && (userLowercase === false) && (userNumbers === true) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+      }
+      //ttft
+      else if((userCaps === true) && (userLowercase === true) && (userNumbers === false) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      }
+      //fttt
+      else if((userCaps === false) && (userLowercase === true) && (userNumbers === true) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      }
+      //fftt
+      else if((userCaps === false) && (userLowercase === false) && (userNumbers === true) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+      }
+      //ffft
+      else if((userCaps === false) && (userLowercase === false) && (userNumbers === false) && (userSymbols === true)){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
+      }
+      //ffff
+      else if((userCaps === false) && (userLowercase === false) && (userNumbers === false) && (userSymbols === false)) {
       alert ("You must choose at least one prompt to generate a password.")
       }
-}
+
 
 while 
 
-for (var i= 0; i < userPasswordLengthInput; i++) {
+for (var i= 0; i < valueChar; i++) {
   userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
 }
 // Add event listener to generate button
