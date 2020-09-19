@@ -22,7 +22,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
   var userPasswordLengthInput = prompt("What is the password length?")
   ​
       if (isNaN(userPasswordLengthInput)) {
-          alert('Please enter an number.')
+          alert('Please enter a number.')
   ​
           continue;
       }
