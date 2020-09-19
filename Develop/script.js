@@ -10,11 +10,11 @@ function writePassword() {
 
 }
 
-for (var i= 0; i < passwordText; i++) {
-  
-}
-
 var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ "
+
+for (var i= 0; i < passwordText; i++) {
+  userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
+}
 
 var userPasswordLength = 0
 while (userPasswordLength < 8 || userPasswordLength > 128) {
@@ -34,7 +34,34 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         continue;
       }
 
-      if (userCaps = false && userLowercase = false && userNumbers = false && userSymbols = false) {
+      if (userCaps = true && userLowercase = true && userNumbers = true && userSymbols = true){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
+      }
+
+      else if (userCaps = true && userLowercase = true && userNumbers = true && userSymbols = false){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+      }
+
+      else if (userCaps = true && userLowercase = true && userNumbers = false && userSymbols = false){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      }
+
+      else if (userCaps = true && userLowercase = false && userNumbers = false && userSymbols = false){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      }
+
+      else if (userCaps = true && userLowercase = false && userNumbers = true && userSymbols = false){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+      }
+
+      else if (userCaps = true && userLowercase = false && userNumbers = false && userSymbols = true){
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
+      }
+
+      
+  
+
+      else if (userCaps = false && userLowercase = false && userNumbers = false && userSymbols = false) {
       alert ("You must choose at least one prompt to generate a password.")
       }
 }
