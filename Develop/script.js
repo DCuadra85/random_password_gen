@@ -147,19 +147,24 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
       alert ("You must choose at least one prompt to generate a password.")
       }
 
+      var finalPassword = passwordArray.toString().split(",").join("");
+      console.log("finalpassword" , finalPassword);
+      document.getElementById("password").innerHTML = finalPassword
+
     }
 
 
 // Write password to the #password input
 // function writePassword() {
-//   var passwordSelection = document.getElementById("password").value;
+  
+
 //   var passwordSelection = document.querySelector("#password");
 
 //   passwordSelection.value = userPassword;
 
 // }
 
-
+// alert passwordArray
 
 
 //example of the RNG array function
