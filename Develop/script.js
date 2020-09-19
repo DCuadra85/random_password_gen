@@ -34,6 +34,11 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         continue;
       }
 
+  var userLowercase = confirm ("Does the password have lower case?");
+  var userCaps = confirm ("Does the password have capitals?");
+  var userNumbers = confirm ("Does the password have numbers?");
+  var userSymbols = confirm("Does the password have special characters?");
+
       if (userCaps = true && userLowercase = true && userNumbers = true && userSymbols = true){
         valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
       }
