@@ -38,77 +38,79 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
       //tttt
       if ((userCaps === true) && (userLowercase === true) && (userNumbers === true) && (userSymbols === true)){
         var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
-        for (var i= 0; i < valueChar; i++) {
-          userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
+        for (var i= 0; i < userPasswordLengthInput; i++) {
+          var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length -1))]
         }
+        document.getElementById("password") 
+        console.log(password)
       }
       //tttf
       else if((userCaps === true) && (userLowercase === true) && (userNumbers === true) && (userSymbols === false)){
         valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-        for (var i= 0; i < valueChar; i++) {
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //ttff
       else if((userCaps === true) && (userLowercase === true) && (userNumbers === false) && (userSymbols === false)){
         valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        for (var i= 0; i < valueChar; i++) {
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //tfff
       else if((userCaps === true) && (userLowercase === false) && (userNumbers === false) && (userSymbols === false)){
         valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        for (var i= 0; i < valueChar; i++) {
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //tfft
       else if((userCaps === true) && (userLowercase === false) && (userNumbers === false) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //tftf
       else if((userCaps === true) && (userLowercase === false) && (userNumbers === true) && (userSymbols === false)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //tftt
       else if((userCaps === true) && (userLowercase === false) && (userNumbers === true) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInputr; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //ttft
       else if((userCaps === true) && (userLowercase === true) && (userNumbers === false) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInputr; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //fttt
       else if((userCaps === false) && (userLowercase === true) && (userNumbers === true) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //fftt
       else if((userCaps === false) && (userLowercase === false) && (userNumbers === true) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "1234567890!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
       }
       //ffft
       else if((userCaps === false) && (userLowercase === false) && (userNumbers === false) && (userSymbols === true)){
-        valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+ ";
-        for (var i= 0; i < valueChar; i++) {
+        valueChar = "!@#$%^&*()_+ ";
+        for (var i= 0; i < userPasswordLengthInput; i++) {
           userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
         }
 
@@ -119,11 +121,11 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
       }
 
 
-while 
-
-//example of array function
-for (var i= 0; i < valueChar; i++) {
-  userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
-}
+//example of the RNG array function
+// for (var i= 0; i < valueChar; i++) {
+//   userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
+// }
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
+
