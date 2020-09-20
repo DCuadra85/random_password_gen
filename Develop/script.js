@@ -1,14 +1,4 @@
-// Assignment Code
-//var generateBtn = document.querySelector("#generate");
-
-// var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ "
-
 function generateBtn(){
-
-var userLowercase = confirm ("Will this password have lower case?");
-var userCaps = confirm ("Will this password have capitals?");
-var userNumbers = confirm ("Will this password have numbers?");
-var userSymbols = confirm("Will this password have special characters?");
 
 var passwordArray = []
 
@@ -29,14 +19,18 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
       }
 }
 
-      //need to ask if there is an easier way of doing this
+var userLowercase = confirm ("Will this password have lower case?");
+var userCaps = confirm ("Will this password have capitals?");
+var userNumbers = confirm ("Will this password have numbers?");
+var userSymbols = confirm("Will this password have special characters?");
+
       //tttt
       if ((userCaps === true) && (userLowercase === true) && (userNumbers === true) && (userSymbols === true)){
         var valueChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+ ";
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
 
       }
@@ -47,7 +41,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -57,7 +51,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -67,7 +61,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -77,7 +71,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -87,7 +81,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -97,7 +91,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -107,7 +101,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -117,7 +111,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          ////console.log(passwordArray)
         }
       }
 
@@ -127,7 +121,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++) {
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
       }
 
@@ -138,7 +132,7 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
         for (var i= 0; i < userPasswordLengthInput; i++){
           var passwordSelection = valueChar[Math.floor(Math.random() * (valueChar.length))]
           passwordArray.push(passwordSelection)
-          console.log(passwordArray)
+          //console.log(passwordArray)
         }
 
       }
@@ -153,24 +147,3 @@ while (userPasswordLength < 8 || userPasswordLength > 128) {
 
     }
 
-
-// Write password to the #password input
-// function writePassword() {
-  
-
-//   var passwordSelection = document.querySelector("#password");
-
-//   passwordSelection.value = userPassword;
-
-// }
-
-// alert passwordArray
-
-
-//example of the RNG array function
-// for (var i= 0; i < valueChar; i++) {
-//   userPasswordLength = password + valueChar.charAt(Math.floor(Math.random() * Math.floor(valueChar.length - 1)))
-// }
-// Add event listener to generate button
-// var generateBtn = document.getElementById("#generate")
-// generateBtn.addEventListener("click", generateButton);
