@@ -57,11 +57,11 @@ Password Output Code:
 
 This page's function was create through JavaScript. Click the "Generate Password" button and a series of prompts will start. Answer the prompts and then a password will generate based on what you enter. 
 
-<img src=".\Assets\pwpromptexample.png">
+<img src="./Assets/pwpromptexample.png">
 
 ---
 
-<img src=".\Assets\passwordexample.png">
+<img src="./Assets/passwordexample.png">
 
 
 ## Credits
@@ -82,7 +82,7 @@ This page's function was create through JavaScript. Click the "Generate Password
 
 ## Deployed Link
 
-* https://dcuadra85.github.io/my-portfolio/
+* https://dcuadra85.github.io/random_password_gen/
 
 
 ## Authors
