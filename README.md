@@ -57,11 +57,11 @@ Password Output Code:
 
 This page's function was create through JavaScript. Click the "Generate Password" button and a series of prompts will start. Answer the prompts and then a password will generate based on what you enter. 
 
-<img src="./assets/pwpromptexample.png">
+<img src=".\Assets\pwpromptexample.png">
 
 ---
 
-<img src="./assets/passwordexample.png">
+<img src=".\Assets\passwordexample.png">
 
 
 ## Credits
